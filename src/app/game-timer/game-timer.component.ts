@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
+interface GameTimerInfo {
+
+  startTime: String
+  , endTime: String
+
+}
+
 @Component({
   selector: 'app-game-timer',
   templateUrl: './game-timer.component.html',
