@@ -1,18 +1,18 @@
 <h1>{{title}}</h1>
 
 <div class="container">
+
+    <div class="card m-3">
+        <button 
+           class="btn btn-lg"
+           (click)="showModal()"
+        >
+            New User?
+        </button>
+    </div>
+
     <div class="row">
 
-        <div class="col-md-6">
-            <div class="card m-3">
-                <button 
-                   class="btn btn-lg"
-                   (click)="showModal()"
-                >
-                    New User?
-                </button>
-            </div>
-        </div>
         <div class="col-md-6">
             <!-- section for displaying personal best time -->
             <div class="card m-3" id="bestTime">
@@ -34,11 +34,11 @@
         </div>
     </div>
 
-    <div class="class-row">
+    <div class="class row">
         <div class="col-md-6">
             <!-- section for displaying # of wins -->
             <div class="card m-3" id="bestTime">
-                <div class="card-header">My Best Time:</div>
+                <div class="card-header"># of times I won:</div>
                 <div class="card-body">
                     No Game Data to display : - (
                 </div>
@@ -48,7 +48,7 @@
         <div class="col-md-6">
             <!-- section for displaying # of losses -->
             <div class="card m-3" id="worstTime">
-                <div class="card-header">My Worst Time:</div>
+                <div class="card-header"># of times I lost:</div>
                 <div class="card-body">
                     No Game Data to display : - (
                 </div>
