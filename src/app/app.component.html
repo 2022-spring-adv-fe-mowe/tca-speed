@@ -1,8 +1,18 @@
 <h1>{{title}}</h1>
-<app-user-profile></app-user-profile>
 
 <div class="container">
     <div class="row">
+
+        <div class="col-md-6">
+            <div class="card m-3">
+                <button 
+                   class="btn btn-lg"
+                   (click)="showModal()"
+                >
+                    New User?
+                </button>
+            </div>
+        </div>
         <div class="col-md-6">
             <!-- section for displaying personal best time -->
             <div class="card m-3" id="bestTime">
