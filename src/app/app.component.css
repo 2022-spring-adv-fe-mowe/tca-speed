@@ -16,13 +16,7 @@ div.container {
     border-radius: 20px;
 }
 
-#opponents {
-    border-radius: 20px;
-}
 
-.addPlayer {
-    text-align: right;
-}
 
 #no-data-stick-man {
     align-self: center; 
@@ -34,6 +28,21 @@ img.stick-man {
     border-radius: 25px;
 }
 
+div.card.m-3.stick-man {
+    color: white;
+    background-color: #FF6341;
+    background: linear-gradient(180deg, rgba(255,99,65,1) 
+                                31%, rgba(255,255,255,1) 
+                                80%, rgba(255,255,255,1) 100%);
+    border-radius: 20px;
+    border: 2px solid #FF6341;
+    margin: 2%;
+}
+
 .no-data {
     text-align: center;
+}
+
+h3.no-data {
+    color: black;
 }

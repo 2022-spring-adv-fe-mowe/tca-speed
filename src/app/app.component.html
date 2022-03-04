@@ -79,27 +79,16 @@
     </div>
 </div>
 
-<div class="card m-3">
+<div class="card m-3 stick-man">
     <h2 class="no-data">Y u have no data???</h2>
     <div class="card-body" id="no-data-stick-man">
         <img class="stick-man" src="../assets/no-data-stick-man.png" alt="wide-eyed stick figure wonders where the data is">
         
     </div>
-    <h3 class="no-data">Go get some game data!! U go play game now!!</h3>
+    <h3 class="no-data">Go get some game data!!</h3>
 </div>
 
-<!-- section for entering in opponent names -->
-<div class="card m-3" id="opponents">
-    <div class="card-header">My Opponents:</div>
-    <div class="card-body">
-        <!-- {{ addNewOpponent ? addNewOpponent.opponentName : "You have no opponents : - (" }} -->
-        None : - (
-        <div class="addPlayer">
-            <!-- add a button here to be able to add a new user?  -->
-            <button class="btn btn-primary">+ player</button>
-        </div>
-    </div>
-</div>
+<app-game-setup></app-game-setup>
 
 <app-game-timer></app-game-timer>
 
