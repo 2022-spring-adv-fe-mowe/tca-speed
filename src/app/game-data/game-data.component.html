@@ -2,16 +2,6 @@
 
 <div class="container">
 
-    <div class="card m-3">
-        <button 
-           class="btn btn-lg"
-           id="new-user"
-           (click)="showModal()"
-        >
-            New User?
-        </button>
-    </div>
-
     <div class="row">
 
         <div class="col-md-6">
@@ -89,8 +79,18 @@
     <h3 class="no-data">Go get some game data!!</h3>
 </div>
 
-<app-game-setup></app-game-setup>
+<div class="btn-start-game">
+    <button 
+        class="btn btn-primary btn-lg" 
+        id="btn-start-game"
+        [routerLink]="['/game-setup']"
+    >
+    Start New Game
+    </button>
+</div>
 
-<app-game-timer></app-game-timer>
 
+<div class="footer-sticky">
+    <p>&copy;TP</p>
+</div>
 
