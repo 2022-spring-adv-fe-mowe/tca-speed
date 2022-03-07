@@ -7,7 +7,7 @@ import { UserProfileComponent } from './user-profile';
 import { GameDataComponent } from './game-data';
 
 const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
     { path: 'game-setup', component: GameSetupComponent },
     { path: 'game-timer', component: GameTimerComponent },
     { path: 'user-profile', component: UserProfileComponent },
