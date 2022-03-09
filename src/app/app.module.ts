@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 import { HomeComponent } from './home';
 import { GameDataComponent } from './game-data/game-data.component';
 import { FormsModule } from '@angular/forms';
+import { PlayerListComponent } from './player-list/player-list.component';
 
 
 
@@ -23,7 +24,7 @@ import { FormsModule } from '@angular/forms';
     , GameTimerComponent
     , GameSetupComponent
     , HomeComponent
-    , GameDataComponent
+    , GameDataComponent, PlayerListComponent
   ],
   imports: [
     BrowserModule
