@@ -1,13 +1,16 @@
-<!-- section for entering in opponent names -->
+<h1>{{ title }}</h1>
+<!-- section for choosing from the list of opponents -->
 <div class="card m-3" id="opponents">
     <div class="card-header">My Opponents:</div>
     <div class="card-body">
         <!-- {{ addNewOpponent ? addNewOpponent.opponentName : "You have no opponents : - (" }} -->
         None : - (
         <div class="addPlayer">
-            <!-- add a button here to be able to add a new user?  -->
+            <!-- if the playerList[] is empty, display [none :-(... )], otherwise get the list of players. 
+            Should also be able to have the list as a form with radio buttons to be able to choose from the opponent list  -->
             <button 
                 class="btn btn-primary"
+                
                 [routerLink]="['/player-list']"
             >+ player</button>
         </div>

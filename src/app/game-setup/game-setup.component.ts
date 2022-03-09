@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { OpponentService } from '../opponent.service';
+import { PlayerService } from '../player.service';
 
-interface OpponentDisplay {
+interface PlayerDisplay {
   playerName: string;
-  playerList: OpponentDisplay[]
+  playerList: PlayerDisplay[]
 }
 
 @Component({
@@ -13,16 +13,18 @@ interface OpponentDisplay {
 })
 export class GameSetupComponent implements OnInit {
 
-  constructor(private OpponentSvc : OpponentService) { }
+  constructor(private PlayerSvc : PlayerService) { }
 
   ngOnInit(): void {
   }
 
-  players: OpponentDisplay[] = [];
+  title = "Choose your Opponent wisely..."
+
+  players: PlayerDisplay[] = [];
 
   addNewPlayer = () => {
     
-    const newPlayer: OpponentDisplay = {
+    const newPlayer: PlayerDisplay = {
       playerName: 'New Player'
       , playerList: []
     };

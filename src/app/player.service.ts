@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 
-interface OpponentFromWeb {
+interface playerFromWeb {
   name: string;
 }
 
 @Injectable({
   providedIn: 'root'
 })
-export class OpponentService {
+export class PlayerService {
 
   constructor() { }
 }
