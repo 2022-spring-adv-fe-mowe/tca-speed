@@ -12,4 +12,6 @@ export class PlayerListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  title = "Choose your Opponents wisely..."
+
 }
