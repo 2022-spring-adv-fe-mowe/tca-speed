@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { UserProfileComponent } from './user-profile/user-profile.component';
+import { UserProfileComponent } from './user-profile';
+
 
 interface DisplayOpponents {
   opponentName: string;
@@ -20,7 +21,7 @@ export class AppComponent {
 
   showModal = () => {
     const modalRef = this.modalSvc.open(UserProfileComponent);
-  }
+}
 
   player2: DisplayOpponents[] = [];
 

@@ -12,23 +12,39 @@
         </nav>
         <router-outlet></router-outlet>
    </header> -->
+
+   <!-- main content container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <nav>
+                    <a routerLink="/">Home</a>
+                    &nbsp;&nbsp;
+                    <a routerLink="/game-setup">Game Setup</a>
+                    &nbsp;&nbsp;
+                    <a routerLink="/game-data">Game Data</a>
+                </nav>
+
+                <div class="card m-3">
+                    <img src="../assets/flash-minimalist.png" alt="The Flash drawing provided by https://www.pixel4k.com/flash-minimalism-2020-115077.html">
+                </div>
+            
+            
+                <div class="card m-3">
+                    <button 
+                       class="btn btn-primary btn-lg"
+                       id="new-user"
+                       (click)="showModal()"
+                    >
+                        New User?
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
    <router-outlet></router-outlet>
-
-    <div class="card m-3">
-        <img src="../assets/flash-minimalist.png" alt="The Flash drawing provided by https://www.pixel4k.com/flash-minimalism-2020-115077.html">
-    </div>
-
-
-    <div class="card m-3">
-        <button 
-           class="btn btn-primary btn-lg"
-           id="new-user"
-           (click)="showModal()"
-        >
-            New User?
-        </button>
-    </div>
-
 </div>
 
 <div class="footer-sticky">
