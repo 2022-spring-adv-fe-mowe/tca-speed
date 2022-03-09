@@ -10,6 +10,7 @@ import { GameSetupComponent } from './game-setup';
 import { Router } from '@angular/router';
 import { HomeComponent } from './home';
 import { GameDataComponent } from './game-data/game-data.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -29,6 +30,8 @@ import { GameDataComponent } from './game-data/game-data.component';
     , appRoutingModule
     , NgbModalModule
     , NgbModule
+    , RouterModule
+    , FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
