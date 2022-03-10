@@ -1,10 +1,34 @@
 <h1>{{ title }}</h1>
+
 <!-- section for choosing from the list of opponents -->
 <div class="card m-3" id="opponents">
     <div class="card-header">My Opponents:</div>
     <div class="card-body">
         <!-- {{ addNewOpponent ? addNewOpponent.opponentName : "You have no opponents : - (" }} -->
-        None : - (
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Default checked radio
+            </label>
+          </div>
+        <div
+            *ngFor="let p of availablePlayers"
+            class="form-check"
+        >
+            
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio">
+                {{ p }}
+            </label>
+            
+        </div>
         <div class="addPlayer">
             <!-- if the playerList[] is empty, display [none :-(... )], otherwise get the list of players. 
             Should also be able to have the list as a form with radio buttons to be able to choose from the opponent list  -->

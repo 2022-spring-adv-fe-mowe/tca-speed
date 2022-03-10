@@ -19,4 +19,9 @@ export class GameTimerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  timerStart = () => {
+
+    
+  }
+
 }

@@ -16,10 +16,12 @@ export class GameSetupComponent implements OnInit {
   constructor(private PlayerSvc : PlayerService) { }
 
   ngOnInit(): void {
+    this.availablePlayers = this.PlayerSvc.NewPlayers;
   }
 
   title = "Choose your Opponent wisely..."
 
+  availablePlayers: string[] = [];
   players: PlayerDisplay[] = [];
 
   addNewPlayer = () => {

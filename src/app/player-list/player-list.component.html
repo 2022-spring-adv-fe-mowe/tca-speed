@@ -1,12 +1,9 @@
 <h1>{{title}}</h1>
 
-<ul>
-    <li>Player 1</li>
-    <li>Player 2</li>
-</ul>
-
 <Form>
-    <input />
+    <input 
+        [(ngModel)]="newPlayer"
+    />
 </Form>
 
 <br />
@@ -14,7 +11,7 @@
 
 <button 
     class="btn btn-lg btn-primary"
-    [routerLink]="['/game-timer']"
+    (click)="addPlayer()"
 >
-    Game On!
+    Add Player
 </button>

@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
 
-interface playerFromWeb {
-  name: string;
-}
 
 @Injectable({
   providedIn: 'root'
@@ -10,4 +7,7 @@ interface playerFromWeb {
 export class PlayerService {
 
   constructor() { }
+
+  NewPlayers: string[] = [];
+
 }
