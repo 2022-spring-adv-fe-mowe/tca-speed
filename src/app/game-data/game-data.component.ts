@@ -7,11 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameDataComponent implements OnInit {
 
-  constructor() { }
+  constructor( private gameDataSvc: GameDataComponent ) { }
 
   ngOnInit(): void {
   }
 
   title = 'My Game Data';
+
+  bestTime = () => {};
+
+  winningCount = () => {};
+
+  winningPercentage = () => {};
+
+  losingPercentage = () => {};
+
+  worstTime = () => {};
+
+  losingCount = () => {};
 
 }
