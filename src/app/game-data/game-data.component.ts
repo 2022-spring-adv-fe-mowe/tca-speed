@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GameDataService } from '../game-data.service';
 
 @Component({
   selector: 'app-game-data',
@@ -7,14 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameDataComponent implements OnInit {
 
-  constructor( private gameDataSvc: GameDataComponent ) { }
+  constructor( private gameDataSvc: GameDataService) { }
 
   ngOnInit(): void {
   }
 
   title = 'My Game Data';
 
-  bestTime = () => {};
+  gameData = "No Game Data to Display :-(("
+
+  bestTime = () => {
+
+    this.gameDataSvc.NewGameData = [
+      this.gameData
+    ];
+  };
 
   winningCount = () => {};
 
