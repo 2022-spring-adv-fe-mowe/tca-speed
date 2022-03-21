@@ -23,6 +23,10 @@ export class AppComponent {
     const modalRef = this.modalSvc.open(UserProfileComponent);
 }
 
+  closeModal = () => {
+    const modalRef = this.modalSvc.dismissAll(UserProfileComponent);
+  }
+
   player2: DisplayOpponents[] = [];
 
   addNewOpponent = () => {

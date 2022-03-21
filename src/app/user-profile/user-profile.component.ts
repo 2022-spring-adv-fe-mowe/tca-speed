@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -9,13 +9,17 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class UserProfileComponent implements OnInit {
 
-  constructor(public activeModal: NgbActiveModal, private route: ActivatedRoute, private router: Router) { }
+  constructor(public activeModal: NgbActiveModal, private route: ActivatedRoute, private router: Router, private modalSvc: NgbModal) { }
 
   ngOnInit(): void {
   }
 
   goToPage = () => {
     this.router.navigate(['/game-data']);
+  }
+
+  closeModal = () => {
+    const modalRef = this.modalSvc.dismissAll(UserProfileComponent);
   }
 
 }
