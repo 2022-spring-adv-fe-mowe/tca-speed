@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { GameDataService } from './game-data.service';
 import { UserProfileComponent } from './user-profile';
 
 
@@ -15,7 +16,7 @@ interface DisplayOpponents {
 })
 export class AppComponent {
 
-  constructor(private modalSvc: NgbModal) {}
+  constructor(private modalSvc: NgbModal, public gameSvc: GameDataService) {}
 
   title = 'Speed Companion App';
 
@@ -41,4 +42,6 @@ export class AppComponent {
       , newOpponent
     ]
   }
+
+  
 }

@@ -8,4 +8,6 @@ export class GameDataService {
   constructor() { }
 
   NewGameData : string [] = []
+
+  hasEmail = false;
 }
