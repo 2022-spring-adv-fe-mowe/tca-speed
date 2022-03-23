@@ -19,12 +19,13 @@ div.container {
 
 
 
+
 /* ***********************image styles ******************** */
 img {
-    border-radius: 70%;
-    max-width: 50%;
-    align-self: center;
-    padding: 5%;
+    min-width: 75%;
+    max-width: 80%;
+    padding-top: 5%;
+    background-position: center center;
 }
 
 /* ***********************button styles ******************** */
@@ -35,6 +36,8 @@ img {
 
 #new-user {
     margin-top: 3rem;
+    align-self: center;
+    min-width: 100%;
 }
 
 /* ***********************footer styles ******************** */
